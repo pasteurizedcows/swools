@@ -1,0 +1,3 @@
+[FILES]
+USE INFLOWS "C:\C_PROJECTS\03762_Arvada_Stormwater_ Masterplan\20200720_100yrAlternatives\PCSWMM\__InterfaceFiles\Arvada_100year_interface.txt"
+USE INFLOWS "test"
