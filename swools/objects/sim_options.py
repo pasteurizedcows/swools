@@ -3,7 +3,6 @@ This class is to read and write the OPTIONS portion of the SWMM .inp file
 '''
 
 from swool_utilities import flt_int
-import sys
 
 class Options(object):
     '''
@@ -93,6 +92,7 @@ class Options(object):
                 s += '\n'
             else:
                 pass
+        s += '\n'
         return s
 
     @staticmethod
@@ -220,6 +220,11 @@ class Options(object):
         return line
 
 if __name__ == '__main__':
+
+    test = Options()
+    print(isinstance(test, Options))
+
+    '''
     from pathlib import Path
     import difflib
 
@@ -264,3 +269,4 @@ if __name__ == '__main__':
     diff = difflib.ndiff(t1.readlines(), t2.readlines())
     for l in diff:
         print(l)
+    '''

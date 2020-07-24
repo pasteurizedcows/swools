@@ -58,6 +58,7 @@ class Files(object):
         s = '[FILES]\n'
         for f in self.interface_files:
             s += str(f) + '\n'
+        s += '\n'
         return s
 
     @staticmethod
